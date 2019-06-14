@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contentStyles.css">
+</head>
+
+<body>
+    <h2>Meer pagina's toevoegen</h2>
+    <p>
+        We gaan nu kijken hoe je meer pagina's aan je website kunt toevoegen.
+    </p>
+    <ul>
+        <li>
+            Klik bovenaan het codepaneel op het <strong>+</strong> symbool naast de tabbladen en typ een naam voor je nieuwe bestand. Het moet eindigen op .html (inclusief de punt!), zodat de browser weet dat het een webpagina is.
+        </li>
+    </ul>
+    <img src="images/add-file.png" alt="" class="img-responsive">
+
+    <div class="accordion" id="renamingExplained">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseRenamingExplained" aria-expanded="true" aria-controls="collapseRenamingExplained">
+          <div class="card-header collapseHeader" id="headingRenamingExplained">
+            <h2 class="mb-0">
+              <img src="images/info.svg" alt="" class="left small-icon"/>
+              <span class="collapseText left">Een bestand hernoemen of verwijderen</span>
+              <i class="fas fa-angle-down collapseIcon"></i>
+            </h2>
+          </div>
+        </button>
+
+            <div id="collapseRenamingExplained" class="collapse hide" aria-labelledby="headingRenamingExplained" data-parent="#renamingExplained">
+                <div class="card-body">
+                    Als je de naam van een bestand wilt wijzigen, klik je op het <strong>tandwielpictogram</strong> rechts van de bestandsnaam en klik je vervolgens op het <strong>potloodpictogram</strong>. Typ de nieuwe naam in en druk op <strong>Enter</strong>.
+                    Je kan ook een bestand verwijderen door op het <strong>prullenbakpictogram</strong> te klikken in plaats van op het <strong>potloodpictogram</strong>.
+                    <img src="images/rename-file.png" alt="" class="img-responsive">
+                    <br />
+                    <p>
+                        Je vraagt je misschien af waarom je de naam van het <code style="background-color:black;">index.html</code> bestand niet kunt wijzigen.
+                        <code style="background-color:black;">index.html</code> is een speciale naam die wordt gebruikt voor de <strong>homepage</strong> (startpagina) van een website. Dat is de eerste pagina waarop je terechtkomt wanneer je een website bezoekt. Wanneer je naar de startpagina
+                        van een website gaat, zoekt de browser naar het bestand <code style="background-color:black;">index.html</code> en geeft het op je scherm weer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<br />
+<ul>
+  <li>
+    Zoek het bestand <code style="background-color:black;">blank_page.html</code> en kopieer en plak alle code ervan in je nieuwe bestand. Omdat je het hele ding wilt kopiëren, kun je overal op de code klikken en gebruik je de sneltoets Ctrl (of cmd) en A om alles in één keer te selecteren.
+</li><li>
+Wijzig de tekst tussen de tags <code style="background-color:black;">&lt;title&gt;&lt;/title&gt;</code> zodat je nieuwe pagina een geschikte titel heeft.
+Trinket geeft de titel niet weer, maar je kunt dit bovenaan in jr browservenster zien als je je project downloadt.
+  </li>
+  <li>
+    Tussen de <code style="background-color:black;">&lt;main&gt;&lt;/main&gt;</code> tags in het nieuwe bestand gebruik je de tags waarvan je weet dat je dingen aan de pagina
+     toevoegt, zoals alinea's, kopjes, afbeeldingen en lijsten!
+</li>
+<li>
+Herhaal de bovenstaande stappen voor elke nieuwe pagina die je wilt toevoegen.
+</li>
+</ul>
+<p>
+Als er te veel tabbladen zijn waarmee Trinket in één keer kan worden weergegeven, kan je de pictogrammen <strong>&lt;</strong> en <strong>&gt;</strong> in de linkerbovenhoek van de tabbladen gebruiken om ertussen te bladeren.
+</p>
+<img src="images/bladeren.png" alt="" class="img-responsive">
+
+<p>
+Nu moet je links maken zodat je bij elk van je nieuwe pagina's kunt komen! Laten we alle links in een lijst plaatsen.
+</p>
+<ul>
+  <li>
+Voeg in het bestand <code style="background-color:black;">index.html</code> de volgende code toe aan de hoofdtekst van je webpagina:
+  </li>
+</ul>
+<div style="background-color: black; color: #fff; padding: 8px;">
+    <code style="background-color:black;">
+    &lt;<span class="pink">ul</span>&gt;<br />
+    <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">index.html</span>"&gt;Home&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+
+    <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">attracties.html</span>"&gt;Plaatsen om te bezoeken&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+    <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">muziek.html</span>"&gt;Muziek&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+    <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">eten.html</span>"&gt;Eetgelegenheden&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+    &lt;<span class="pink">/ul</span>&gt;<br />
+  </code>
+</div>
+<br />
+<ul>
+  <li>
+Wijzig de waarde van het <code style="background-color:black;">href</code> attribuut voor elke koppeling (denk eraan, dat is de tekst binnen de aanhalingstekens) zodat deze exact overeenkomt met de naam van elk HTML-bestand dat je hebt gemaakt.
+  </li>
+  <li>
+Wijzig de tekst tussen de <code style="background-color:black;">&lt;a&gt;&lt;/a&gt;</code> tags in geschikte beschrijvingen van uw pagina's.
+  </li>
+</ul>
+
+<p>
+Nu kun je naar je nieuwe pagina's navigeren!
+</p>
+<img src="images/more-pages.png" alt="" class="img-responsive">
+
+
+
+    <div class="buttonbar">
+        <button id="back" data-item="link.html" onclick="handleMenuClick(this)">
+          <img src="/images/back.svg" alt="" />
+    </button>
+        <button id="next" data-item="navigation.html" onclick="handleMenuClick(this)">
+          Navigeren
+          <i class="fas fa-angle-right"></i>
+    </button>
+    </div>
+
+</body>
+
+</html>

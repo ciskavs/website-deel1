@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contentStyles.css">
+</head>
+
+<body>
+    <h2>Plaatjes toevoegen</h2>
+    <p>
+        Zo voeg je een plaatje toe aan je website:
+    </p>
+    <ul>
+        <li>
+            Ga naar het tabblad <code style="background-color:black;">index.html</code> genaamd. Zoek de <code style="background-color:black;">&lt;/main&gt;</code> tag en typ daarboven het volgende:
+            <div style="background-color: black; color: #fff; padding: 8px;">
+                <code style="background-color:black;">
+                &lt;<span class="pink">img src</span>="<span class="green">tito.png</span>" <span class="pink">alt</span>="<span class="green">Tito the dog</span>" <span class="pink">width</span>="<span class="green">100px</span>" /&gt;
+              </code>
+            </div>
+        </li>
+    </ul>
+    <p>
+        Zo zou het resultaat eruit moeten zien:
+    </p>
+    <img src="images/image-tito.png" alt="" class="img-responsive" />
+    <p>
+        Zie je dat deze tag extra stukjes informatie bevat? Ze worden <strong>attributen</strong> genoemd.
+    </p>
+
+    <ul>
+        <li>
+            Zoek het stukje code dat <code style="background-color:black;">width="100px"</code> zegt en probeer te experimenteren met verschillende nummers om te zien of je kunt achterhalen wat dit attribuut doet. Verwijder de letters <code style="background-color:black;">px</code> niet!
+        </li>
+    </ul>
+
+    <div class="accordion" id="imgTag">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseImgTag" aria-expanded="true" aria-controls="collapseImgTag">
+              <div class="card-header collapseHeader" id="headingimgTag">
+                <h2 class="mb-0">
+                  <img src="images/info.svg" alt="" class="img-responsive left small-icon"/>
+                  <span class="collapseText left">Hoe de img tag werkt</span>
+                  <i class="fas fa-angle-down collapseIcon"></i>
+                </h2>
+              </div>
+            </button>
+
+            <div id="collapseImgTag" class="collapse hide" aria-labelledby="headingimgTag" data-parent="#imgTag">
+                <div class="card-body">
+                    De <code style="background-color:black;">&lt;img&gt;</code> tag verschilt van de andere tags die je tot nu toe hebt gebruikt: er is geen afsluitende <code style="background-color:black;">&lt;/img&gt;</code> tag. In plaats daarvan is deze tag zelfsluitend: deze heeft <code style="background-color:black;">/&gt;</code> aan het einde.
+                    Dit komt omdat er geen 'start' en 'einde' is voor een afbeeldingselement zoals er voor tekst op de pagina is.
+                    <br /><br /> De tag bevat <strong>attributen</strong> met extra informatie:<br />
+
+                    <ul>
+                        <li>
+                            Het attribuut <code style="background-color:black;">src</code> vertelt de browser welk bestand moet worden gebruikt voor de afbeelding.
+                        </li>
+                        <li>
+                            Het <code style="background-color:black;">alt</code> attribuut is een korte beschrijving die de browser zal weergeven als deze de afbeelding niet kan weergeven. 'Alt' is een afkorting voor 'alternatief'. Deze tekst helpt ook mensen die een schermlezer gebruiken
+                            om te weten wat de afbeelding is.
+                        </li>
+                        <li>
+                            Het attribuut <code style="background-color:black;">width</code> geeft de browser aan hoe breed de afbeelding moet zijn. <code style="background-color:black;">100px</code> betekent honderd pixels, dat zijn de kleine puntjes waaruit je op je scherm ziet. Als u dit attribuut niet opneemt, wordt
+                            de afbeelding in de oorspronkelijke grootte weergegeven.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        Nu je de code kent om een foto op je website te plaatsen, wil je waarschijnlijk de foto veranderen, toch?
+    </p>
+    <ul>
+        <li>
+            Het eerste dat je nodig hebt is natuurlijk een foto! Je kunt er een gebruiken die je al op je computer hebt staan, zoals een foto die je hebt gemaakt, of je kunt er een van internet downloaden.
+        </li>
+    </ul>
+
+    <div class="accordion" id="imgDownload">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseImgDownload" aria-expanded="true" aria-controls="collapseImgDownload">
+          <div class="card-header collapseHeader" id="headingimgDownload">
+            <h2 class="mb-0">
+              <img src="images/info.svg" alt="" class="img-responsive left small-icon"/>
+              <span class="collapseText left">Een plaatje van het internet</span>
+              <i class="fas fa-angle-down collapseIcon"></i>
+            </h2>
+          </div>
+        </button>
+
+            <div id="collapseImgDownload" class="collapse hide" aria-labelledby="headingimgDownload" data-parent="#imgDownload">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Zoek naar afbeeldingen waarvan je een foto van wilt hebben.
+                        </li>
+                        <li>
+                            Als je een foto vindt die je leuk vindt, klik erop om hem op volledig formaat te openen.
+                        </li>
+                        <li>
+                            Klik vervolgens met de rechtermuisknop op de afbeelding en selecteer <strong>Afbeelding opslaan als...</strong> Controleer of je <strong>Koppeling opslaan als...</strong> niet hebt geselecteerd.
+                        </li>
+                        <li>
+                            Menu met afbeelding opslaan Zoals geselecteerd
+                        </li>
+                        <li>
+                            Typ een korte naam in het daarvoor bestemde vakje.
+                        </li>
+                        <li>
+                            Noteer voordat je op <strong>Opslaan</strong> klikt in welke map je de afbeelding opslaat. Je moet dit onthouden om de foto later te vinden! Je kunt desgewenst een specifieke map selecteren. Als je zeker weet dat je de afbeelding
+                            opnieuw zult vinden, klik je op <strong>Opslaan</strong>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>
+        <strong>Let op</strong>: niet alle afbeeldingen die je op internet vindt, zijn gratis voor iedereen. Als je een afbeelding downloadt, moet je ervoor zorgen dat dit er een is die je mag gebruiken. Lees hier meer over:
+    </p>
+    <div class="accordion" id="allowedImg">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseAllowedImg" aria-expanded="true" aria-controls="collapseAllowedImg">
+              <div class="card-header collapseHeader" id="headingallowedImg">
+                <h2 class="mb-0">
+                  <img src="images/info.svg" alt="" class="img-responsive left small-icon"/>
+                  <span class="collapseText left">Afbeeldingen zoeken die je mag gebruiken</span>
+                  <i class="fas fa-angle-down collapseIcon"></i>
+                </h2>
+              </div>
+            </button>
+
+            <div id="collapseAllowedImg" class="collapse hide" aria-labelledby="headingallowedImg" data-parent="#allowedImg">
+                <div class="card-body">
+                    <p>
+                        Vanwege de auteurswet kun je niet alles gebruiken wat je op internet vindt. De auteurswet is bedoeld om makers van artistieke, literaire, muzikale en dramatische werken te beschermen tegen misbruik of misbruik van hun werk. De auteurswet is van toepassing
+                        op alle soorten materialen offline en online, inclusief afbeeldingen en kunstwerken.
+                    </p>
+                    <p>
+                        Een auteursrechtelijk beschermd werk gebruiken zonder toestemming van de eigenaren mag niet. Dan schendt je het auteursrecht. Veel afbeeldingen op internet zijn auteursrechtelijk beschermd. Ook zonder het copyright-symbool © kan een afbeelding auteursrechtelijk
+                        beschermd zijn. Als je zo'n afbeelding wilt gebruiken, moet je toestemming vragen aan alle auteursrechteigenaren. Anders kun je zoeken naar afbeeldingen die je gratis kan gebruiken met behulp van Creative Commons-licenties.
+                    </P>
+                    <h3>Creative Commons</h3>
+                    <p>
+                        Met een Creative Commons-licentie kan de maker van een afbeelding alle rechten op het werk of slechts enkele daarvan gratis weggeven. Op de <a href="https://creativecommons.org/" target="_blank">Creative Commons-website</a> is
+                        een <a htref="https://search.creativecommons.org/">zoekfunctie</a> die je kunt gebruiken om afbeeldingen te vinden die een Creative Commons-licentie hebben.
+                        <br /> Een andere goede plaats om naar afbeeldingen te zoeken die beschikbaar zijn onder een Creative Commons-licentie is
+                        <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>.
+                        <br /> Veel zoekmachines beschikken ook over een manier om afbeeldingen te zoeken met een Creative Commons-licentie, zodat mensen kunnen voorkomen dat ze de auteursrechtwetgeving overtreden.
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        Als je een foto hebt, kunt u het bestand <strong>uploaden</strong> naar Trinket:
+    </p>
+    <ul>
+        <li>
+            Klik in Trinket op het <strong>afbeeldings</strong>pictogram naast het + -teken.
+        </li>
+    </ul>
+    <img src="images/imagebutton.png" alt="" class="img-responsive" />
+    <p>
+        Hier kun je de afbeeldingen zien die je op je website kunt gebruiken. Je zou de afbeelding van Tito, de CoderDojo-hond, moeten zien.
+    </p>
+    <ul>
+        <li>
+            Klik op de knop <strong>Add image</strong> (Afbeelding toevoegen) en klik vervolgens op <strong>Uploaden</strong>.
+        </li>
+        <li>
+            Klik op de knop <strong>Click to select files</strong>(Klik om bestanden te selecteren). Zoek en dubbelklik op uw afbeeldingsbestand in het venster dat wordt geopend.
+        </li>
+        <li>
+            Klik op <strong>Done</strong> (Gereed).
+        </li>
+    </ul>
+    <img src="images/uploadImages.png" alt="" class="img-responsive" />
+    <p>
+        Je foto wordt geüpload en is klaar voor gebruik.
+    </p>
+    <ul>
+        <li>
+            Ga naar het bestand <code style="background-color:black;">index.html</code> en zoek de tag <code style="background-color:black;">&lt;img&gt;</code>. Wijzig de tekst <code style="background-color:black;">tito.png</code> zodat deze exact overeenkomt met de naam van het afbeelding die je hebt gekozen. Let op dat de naam kan eindigen op
+            <code style="background-color:black;">.jpg</code> in plaats van <code style="background-color:black;">.png</code>!
+        </li>
+    </ul>
+    <p>
+        De tekst die je zojuist hebt gewijzigd, is van het attribuut <code style="background-color:black;">src</code>, dat de browser vertelt welk bestand moet worden weergegeven.
+    </p>
+    <p>
+        <strong>Let op</strong>: om de waarde die je typt voor een attribuut moeten aanhalingstekens <code style="background-color:black;">""</code> staan!
+    </p>
+    <h3>Uitdaging: verander de alt-tekst van de afbeelding</h3>
+    <p>
+      Zoek het <strong>alt</strong> attribuut van je afbeeldingselement en verander de tekst erin in een korte beschrijving van je afbeelding.
+  </p>
+
+    <div class="buttonbar">
+        <button id="back" data-item="looks.html" onclick="handleMenuClick(this)">
+          <img src="/images/back.svg" alt="" class="img-responsive"/>
+        </button>
+        <button id="next" data-item="mapvideo.html" onclick="handleMenuClick(this)">
+          Een kaart of video toevoegen
+          <i class="fas fa-angle-right"></i>
+    </button>
+    </div>
+</body>
+
+</html>

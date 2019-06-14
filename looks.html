@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contentStyles.css">
+</head>
+
+<body>
+    <h2>Bepalen hoe het eruit ziet</h2>
+
+    <p>
+        De code die beschrijft hoe een website eruitziet, wordt CSS genoemd.
+    </p>
+
+    <ul>
+      <li>
+        Kijk naar de tabbladen bovenaan het codepaneel en ga naar het bestand <code style="background-color:black;">styles.css</code> door op het tabblad met die naam te klikken.
+        Het bestand bevat de volgende tekst:
+        <div style="background-color: black; color: #fff; padding: 8px;">
+          <code style="background-color:black;">
+            <span class="purple">body</span> {<br />
+              <span class="oker" style="padding-left:24px;">background-color</span>: white;<br />
+            }
+          </code>
+        </div>
+      </li>
+      <li>
+        Verander de <code style="background-color:black;">white</code> kleur in <code style="background-color:black;">LightSkyBlue</code> en kijk wat er gebeurt. Je website zou nu een blauwe achtergrond moeten hebben!
+      </li>
+    </ul>
+    <img src="images/trinket-looks.png" alt="Trinket" class="img-responsive">
+
+    <div class="accordion" id="cssExplained">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseCssExplained" aria-expanded="true" aria-controls="collapseCssExplained">
+              <div class="card-header collapseHeader" id="headingcssExplained">
+                <h2 class="mb-0">
+                  <img src="images/info.svg" alt="" class="left small-icon"/>
+                  <span class="collapseText left">Hoe werkt het?</span>
+                  <i class="fas fa-angle-down collapseIcon"></i>
+                </h2>
+              </div>
+            </button>
+
+            <div id="collapseCssExplained" class="collapse hide" aria-labelledby="headingCssExplained" data-parent="#cssExplained">
+                <div class="card-body">
+                  Als je de bovenkant van het <code style="background-color:black;">index.html</code> bestand bekijkt, zie je de volgende regel:
+                  <br />
+
+                  <div style="background-color: black; color: #fff; padding: 8px;">
+                    <code style="background-color:black;">
+                      &lt;<span class="pink">link type</span>=
+                      <span class="green">"text / css"</span>
+                      <span class="pink">rel</span> = "<span class="green">stylesheet</span>"
+                      <span class="pink">href</span> = "<span class="green">styles.css</span>" /&gt;
+                    </code>
+                  </div>
+                  <br />
+                  De bovenstaande regel vertelt de browser om te zoeken naar een speciaal bestand met de naam <code style="background-color:black;">styles.css</code>.
+                  Dit speciale bestand wordt een <strong>style sheet</strong> (stijlpagina) genoemd. Je kunt een stylesheet herkennen
+                  door de <code style="background-color:black;">.css</code> in de bestandsnaam.
+                  <br /><br />
+                  Een stijlblad bevat <strong>regels</strong> voor hoe elk element op uw webpagina eruit zou moeten zien.
+                  <br /><br />
+                  De accolades <code style="background-color:black;">{}</code> en de code ertussen zijn een reeks <strong>CSS-regels</strong>.
+                  Het woord <code style="background-color:black;">body</code> betekent dat de regels gelden voor alle <code style="background-color:black;">&lt;body&gt;</code> elementen op je website.
+                  We noemen het stukje vóór de accolades een <strong>selector</strong>. Dus in dit geval is het de selector voor de body elementen.
+                  <br /><br />
+                  Elke regel binnen de accolades bestaat uit:
+                  <ul>
+                    <li>Een <strong>eigenschap</strong> aan de linkerkant, gevolgd door een dubbele punt <code style="background-color:black;">:</code></li>
+                    <li>Een <strong>waarde</strong> voor de eigenschap aan de rechterkant na de dubbele punt</li>
+                    <li>Een puntkommasymbool <code style="background-color:black;">;</code> aan het einde</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul>
+      <li>
+        Laten we regels toevoegen om de weergave van de tekst te veranderen. Voeg twee nieuwe lijnen toe binnen de accolades:<br />
+        <div style="background-color: black; color: #fff; padding: 8px;">
+          <code style="background-color:black;">
+            <span class="purple">body</span> {<br />
+              <span class="oker" style="padding-left:24px;">background-color</span>: LightSkyBlue;<br />
+              <span class="oker" style="padding-left:24px;">font-family</span>: <span class="green">"Helvetica"</span>, sans-serif;<br />
+              <span class="oker" style="padding-left:24px;">color</span>: purple;<br />
+            }
+          </code>
+        </div>
+        Kijk hoe dit de webpagina heeft veranderd.<br />
+        De eigenschap <code style="background-color:black;">color</code> is altijd voor tekst. Hier stel je de kleur in van alle tekst in de <code style="background-color:black;">body</code> van je webpagina.
+      </li>
+      <li>
+        Je kunt ook aparte regels schrijven voor de kopjes en de alinea's. Voor <code style="background-color:black;">&lt;h1&gt;</code> kopjes gebruik je de <code style="background-color:black;">h1</code> selector.
+        Onder de sluitende accolade die de CSS-regel voor de <code style="background-color:black;">body</code> bevat, voeg je de volgende code toe:
+        <div style="background-color: black; color: #fff; padding: 8px;">
+          <code style="background-color:black;">
+            <span class="purple">h1</span> {<br />
+              <span class="oker" style="padding-left:24px;">color</span>: orange;<br />
+              <span class="oker" style="padding-left:24px;">font-family</span>: <span class="green">"Times New Roman"</span>, serif;<br />
+            }
+          </code>
+        </div>
+        De koptekst moet nu oranje zijn, met de alinea in het paars.
+      </li>
+    </ul>
+
+    <img src="images/trinket-looks-text-color.png" alt="" alt="Trinket" class="img-responsive">
+
+    <p>
+      Zie je dat de letters er anders uitzien en ook een andere kleur hebben? Dit komt omdat je hun <strong>font-family</strong> hebt gewijzigd.
+      Je kunt <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">hier</a> nog meer lettertypen vinden.
+    </p>
+    <ul>
+      <li>
+        Probeer regels toe te voegen voor de <code style="background-color:black;">&lt;h2&gt;</code> kopjes, met behulp van de <code style="background-color:black;">h2</code> selector.
+      </li>
+      <li>
+        Waarom niet experimenteren met verschillende kleurencombinaties voor de tekst en achtergrond? Er zijn veel kleuren beschikbaar om te gebruiken.
+        Je vindt ze <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">hier</a>.
+      </li>
+    </ul>
+
+    <div class="buttonbar">
+        <button id="back" data-item="first.html" onclick="handleMenuClick(this)">
+          <img src="/images/back.svg" alt="" />
+        </button>
+        <button id="next" data-item="images.html" onclick="handleMenuClick(this)">
+          Plaatjes toevoegen
+          <i class="fas fa-angle-right"></i>
+    </button>
+    </div>
+</body>
+
+</html>

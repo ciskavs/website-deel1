@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contentStyles.css">
+</head>
+
+<body>
+    <h2>Navigeren</h2>
+    <p>
+        Veel websites hebben een navigatiemenu waarmee bezoekers tussen pagina's kunnen navigeren. Nu je een aantal pagina's, een startpagina en links naar elke pagina hebt, kun je de lijst met links naar een navigatiegedeelte boven aan elke pagina verplaatsen.
+    </p>
+
+    <img src="images/navigation.png" alt="" class="img-responsive">
+
+    <ul>
+        <li>
+            Zoek de code voor de lijst met links die je in de vorige stap hebt gemaakt.
+        </li>
+        <li>
+            Vlak voor de start <code style="background-color:black;">&lt;ul&gt;</code> tag druk je op <strong>Enter</strong> om een nieuwe lege regel te maken en typ je vervolgens op de nieuwe regel de volgende tag: <code style="background-color:black;">&lt;nav&gt;</code>.
+            Trinket voegt automatisch de afsluitende tag meteen toe, maar je kan die verwijderen - hij staat niet op de juiste plaats.
+        </li>
+        <li>
+            Vlak <strong>na</strong> de afsluitende <code style="background-color:black;">&lt;/ul&gt;</code> tag druk je op <strong>Enter</strong> om een nieuwe lege regel te maken en typ je daar de afsluitende tag <code style="background-color:black;">&lt;/nav&gt;</code>.
+        </li>
+        <li>
+            Selecteer nu het volledige <code style="background-color:black;">&lt;nav&gt;</code> gedeelte met lijst door net vóór de opening <code style="background-color:black;">&lt;nav&gt;</code> tag te klikken en de muis helemaal naar beneden te slepen
+            net na de afsluitende <code style="background-color:black;">&lt;/nav&gt;</code> tag, zodat alle tekst inclusief de opening en sluiting tags worden gemarkeerd. Zorg ervoor dat alle puntige haken <code style="background-color:black;">&lt;</code>            en <code style="background-color:black;">&gt;</code> aan het begin en aan het einde ook zijn gemarkeerd!
+        </li>
+    </ul>
+
+    <img src="images/nav-copy.png" alt="" class="img-responsive">
+
+    <ul>
+        <li>
+            Je gaat deze keer knippen in plaats van kopiëren. Houd de Ctrl (of cmd) -toets ingedrukt en houd deze ingedrukt terwijl je op de X-toets drukt. De gemarkeerde code verdwijnt, maar raak niet in paniek!
+        </li>
+        <li>
+            Klik boven in het bestand in de ruimte tussen de tags <code style="background-color:black;">&lt;header&gt;&lt;/header&gt;</code>. Zorg ervoor dat de cursor daar knippert. Plak de code nu in door op Ctrl (of cmd) en V te drukken. De code zou
+            er ongeveer zo uit moeten zien:
+        </li>
+    </ul>
+
+    <div style="background-color: black; color: #fff; padding: 8px;">
+        <code style="background-color:black;">
+        &lt;<span class="pink">header</span>&gt;<br />
+        <span style="padding-left:24px;">&lt;<span class="pink">nav</span>&gt;</span><br />
+
+        <span style="padding-left:48px;">&lt;<span class="pink">ul</span>&gt;</span><br />
+
+        <span style="padding-left:72px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">index.html</span>"&gt;Home&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+        <span style="padding-left:72px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">attracties.html</span>"&gt;Plaatsen om te bezoeken&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+        <span style="padding-left:72px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">muziek.html</span>"&gt;Muziek&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+        <span style="padding-left:72px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">eten.html</span>"&gt;Eetgelegenheden&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+
+        <span style="padding-left:48px;">&lt;<span class="pink">/ul</span>&gt;</span><br />
+
+        <span style="padding-left:24px;">&lt;<span class="pink">/nav</span>&gt;</span><br />
+        &lt;<span class="pink">/header</span>&gt;<br />
+      </code>
+    </div>
+
+    <div class="accordion" id="undoExplained">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseUndoExplained" aria-expanded="true" aria-controls="collapseUndoExplained">
+              <div class="card-header collapseHeader" id="headingUndoExplained">
+                <h2 class="mb-0">
+                  <img src="images/info.svg" alt="" class="left small-icon"/>
+                  <span class="collapseText left">Ongedaan maken</span>
+                  <i class="fas fa-angle-down collapseIcon"></i>
+                </h2>
+              </div>
+            </button>
+
+            <div id="collapseUndoExplained" class="collapse hide" aria-labelledby="headingUndoExplained" data-parent="#undoExplained">
+                <div class="card-body">
+                    Als je een fout maakt, kan je deze ongedaan maken door Ctrl (of cmd) en Z samen in te drukken. Je kan deze toetscombinatie meestal enkele keren indrukken om de laatste paar wijzigingen ongedaan te maken. Dit is een andere handige sneltoets die je in veel
+                    programma's kunt gebruiken!
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li>
+            Probeer je links uit om er zeker van te zijn dat ze nog steeds werken.
+        </li>
+    </ul>
+    <h3>Uitdaging: navigatiemenu's voor alle pagina's</h3>
+    <ul>
+        <li>Plaats dit codegedeelte in het kopgedeelte van elk HTML-bestand dat je hebt gemaakt. Hierdoor wordt het navigatiemenu bovenaan elke pagina op je website weergegeven.
+        </li>
+    </ul>
+
+    <div class="accordion" id="navAllExplained">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseNavAllExplained" aria-expanded="true" aria-controls="collapseNavAllExplained">
+              <div class="card-header collapseHeader" id="headingNavAllExplained">
+                <h2 class="mb-0">
+                  <img src="images/hint.svg" alt="" class="left small-icon"/>
+                  <span class="collapseText left">Geef me een hint</span>
+                  <i class="fas fa-angle-down collapseIcon"></i>
+                </h2>
+              </div>
+            </button>
+
+            <div id="collapseNavAllExplained" class="collapse hide" aria-labelledby="headingNavAllExplained" data-parent="#navAllExplained">
+                <div class="card-body">
+                    Selecteer het volledige <code>&lt;nav&gt;</code> gedeelte zoals je eerder deed en druk de Ctrl- (of cmd) en C-toetsen samen in om het te kopiëren.
+                    <br />
+                    <p>
+                        Klik vervolgens in elk van je <code>.html</code> bestanden in de sectie <code>&lt;header&gt;&lt;/header&gt;</code> en plak de code precies zoals je eerder deed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        Nu kan je op de links klikken, ongeacht op welke pagina je bent.
+    </p>
+
+    <div class="buttonbar">
+        <button id="back" data-item="morepages.html" onclick="handleMenuClick(this)">
+          <img src="/images/back.svg" alt="" />
+    </button>
+        <button id="next" data-item="menubar.html" onclick="handleMenuClick(this)">
+          Een menubalk maken
+          <i class="fas fa-angle-right"></i>
+    </button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/contentStyles.css">
+</head>
+
+<body>
+    <h2>Een lijst maken</h2>
+
+    <p>
+        Nu ga je leren hoe je een lijst met items, zoals "eenhoorns, robots, katten", kan veranderen in een mooiere lijst waarmee je later coole dingen kunt doen.
+    </p>
+    <ul>
+        <li>
+            Voeg in het <code style="background-color:black;">index.html</code> bestand de volgende code toe net boven de regel met <code style="background-color:black;">&lt;/main&gt;</code> erop:
+        </li>
+    </ul>
+    <div style="background-color: black; color: #fff; padding: 8px;">
+        <code style="background-color:black;">
+        &lt;<span class="pink">ul</span>&gt;<br />
+        <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;Koeien&lt;/<span class="pink">li</span>&gt;</span><br />
+        <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;Schapen&lt;/<span class="pink">li</span>&gt;</span><br />
+        <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;Vossen&lt;/<span class="pink">li</span>&gt;</span><br />
+        <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;Vleermuizen&lt;/<span class="pink">li</span>&gt;</span><br />
+        &lt;/<span class="pink">ul</span>&gt;<br />
+      </code>
+    </div>
+    <br />
+    <p>
+        Het resultaat zou een leuke lijst als deze moeten zijn:
+    </p>
+    <img src="images/trinket-list.png" alt="" class="img-responsive"><br />
+    <p>
+        Let op: er is een apart paar <code style="background-color:black;">&lt;li&gt;&lt;/li&gt;</code> tags rond elk item in de lijst.
+    </p>
+    <p>
+        Dit is een lijst van enkele dieren die je in Nederland zou kunnen tegenkomen. Je kan de items in de lijst wijzigen in dingen die logisch zijn voor jouw website en een alinea boven de lijst toevoegen om te beschrijven wat voor soort lijst het is, als je
+        dat wil!
+    </p>
+    <p>
+        Wat als je een genummerde lijst wilt? Het is bijna hetzelfde, maar in plaats van <code style="background-color:black;">&lt;ul&gt;</code> gebruikt u <code style="background-color:black;">&lt;ol&gt;</code>. Een genummerde lijst wordt ook een <strong>geordende</strong> lijst genoemd.
+    </p>
+    <ul>
+        <li>
+            Voeg de onderstaande code toe <strong>onder</strong> de code die je zojuist hebt geschreven - zorg ervoor dat deze onder de <code style="background-color:black;">&lt;/ul&gt;</code> tag staat!
+        </li>
+    </ul>
+    <div style="background-color: black; color: #fff; padding: 8px;">
+        <code style="background-color:black;">
+      &lt;<span class="pink">p</span>&gt;<br />
+      <span style="padding-left:24px;">Mijn favoriete dingen om te eten en drinken in Nederland zijn:</span><br />
+      &lt;/<span class="pink">p</span>&gt;<br />
+      &lt;<span class="pink">ol</span>&gt;<br />
+      <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;Thee&lt;/<span class="pink">li</span>&gt;</span><br />
+      <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;Stamppot&lt;/<span class="pink">li</span>&gt;</span><br />
+      <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;Pizza&lt;/<span class="pink">li</span>&gt;</span><br />
+      <span style="padding-left:24px;">&lt;<span class="pink">li</span>&gt;Ijs&lt;/<span class="pink">li</span>&gt;</span><br />
+      &lt;/<span class="pink">ol</span>&gt;<br />
+    </code>
+    </div>
+    <br />
+    <p>
+        Zo zou het er nu uit moeten zien:
+    </p>
+    <img src="images/trinket-list-numbered.png" alt="" class="img-responsive"><br />
+    <h3>Uitdaging: voeg stijl toe aan uw lijsten</h3>
+    <ul>
+        <li>
+            Kijk of je <strong>CSS regels</strong> aan je stylesheet kunt toevoegen om de weergave van je lijsten te wijzigen.
+        </li>
+    </ul>
+
+    <div class="buttonbar">
+        <button id="back" data-item="mapvideo.html" onclick="handleMenuClick(this)">
+          <img src="/images/back.svg" alt="" />
+    </button>
+        <button id="next" data-item="link.html" onclick="handleMenuClick(this)">
+          Koppelingen maken
+          <i class="fas fa-angle-right"></i>
+    </button>
+    </div>
+</body>
+
+</html>
