@@ -8,6 +8,162 @@
 
 <body>
     <h2>Een tabel toevoegen</h2>
+    <p>
+        Soms kan het nuttig zijn om informatie in een tabel weer te geven. Je wil bijvoorbeeld ledeninformatie op een website vermelden voor een plaatselijke sportclub of school, of informatie over je top tien favoriete nummers.
+    </p>
+    <p>
+        Een tabel is een raster dat bestaat uit <strong>rijen</strong> en <strong>kolommen</strong>. De meeste tabellen bevatten ook titels aan de bovenkant van elke kolom, de <strong>header</strong>. Hier is een voorbeeld:
+    </p>
+    <img src="images/table-pets.png" alt="" class="img-responsive">
+
+    <ul>
+        <li>
+            Ga naar het bestand <code>page_with_table.html</code>. Daar zie je code tussen de tags <code>&lt;table&gt;&lt;/table&gt;</code>.
+        </li>
+        <li>
+            Selecteer alle code vanaf het begin van de <code>&lt;table&gt;</code> tag tot het einde van de afsluitende <code>&lt;/table&gt;</code> tag en kopieer deze. Ga vervolgens naar een van jw bestanden waar je een tabel wilt plaatsen en plak de
+            code in.
+        </li>
+    </ul>
+    <p>
+        Nu is je tabel nog leeg.
+    </p>
+    <ul>
+        <li>
+            Probeer de tabel te vullen met alles wat je maar wil! Dit doe je door tekst tussen de <code>&lt;td&gt;&lt;/td&gt;</code> tags en tussen de <code>&lt;th&gt;&lt;/th&gt;</code> tags te zetten. Je kan meer tags toevoegen als dat nodig is.
+        </li>
+    </ul>
+
+    <div class="accordion" id="tableExplained">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseTableExplained" aria-expanded="true" aria-controls="collapseTableExplained">
+              <div class="card-header collapseHeader" id="headingTableExplained">
+                <h2 class="mb-0">
+                  <img src="images/info.svg" alt="" class="left small-icon"/>
+                  <span class="collapseText left">Voorbeeld code</span>
+                  <i class="fas fa-angle-down collapseIcon"></i>
+                </h2>
+              </div>
+            </button>
+
+            <div id="collapseTableExplained" class="collapse hide" aria-labelledby="headingTableExplained" data-parent="#tableExplained">
+                <div class="card-body">
+                    De HTML-code voor de bovenstaande tabel ziet er als volgt uit:
+                    <div style="background-color: black; color: #fff; padding: 8px;">
+                        <code style="background-color:black;">
+                      &lt;<span class="pink">table</span>&gt;<br />
+                              <span style="padding-left:24px;">&lt;<span class="pink">tr</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">th</span>&gt;Naam&lt;/<span class="pink">th</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">th</span>&gt;Dier&lt;/<span class="pink">th</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">th</span>&gt;Kleur&lt;/<span class="pink">th</span>&gt;</span><br />
+                      	      <span style="padding-left:24px;">&lt;/<span class="pink">tr</span>&gt;</span><br />
+                      	      <span style="padding-left:24px;">&lt;<span class="pink">tr</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Mia&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Kat&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Zwart en pluizig&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	      <span style="padding-left:24px;">&lt;/<span class="pink">tr</span>&gt;</span><br />
+                      	      <span style="padding-left:24px;">&lt;<span class="pink">tr</span>&gt;</span><br />
+                      	       <span style="padding-left:48px;"> &lt;<span class="pink">td</span>&gt;Tito&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Hond&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;zwart met bruine vlekken&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	      <span style="padding-left:24px;">&lt;/<span class="pink">tr</span>&gt;</span><br />
+                      	     <span style="padding-left:24px;">&lt;<span class="pink">tr</span>&gt;</span><br />
+                      	       <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Knabbel&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Cavia&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Wit met oranje vlekken&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	      <span style="padding-left:24px;">&lt;/<span class="pink">tr</span>&gt;</span><br />
+                      	     <span style="padding-left:24px;">&lt;<span class="pink">tr</span>&gt;</span><br />
+                      	       <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Alfie&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Parkiet&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	        <span style="padding-left:48px;">&lt;<span class="pink">td</span>&gt;Groen en geel&lt;/<span class="pink">td</span>&gt;</span><br />
+                      	      <span style="padding-left:24px;">&lt;/<span class="pink">tr</span>&gt;</span><br />
+                            &lt;/<span class="pink">table</span>&gt;<br />
+                    </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <p>
+        Voeg nog een <strong>rij</strong> toe met <code>&lt;tr&gt;&lt;/tr&gt;</code> tags. Daartussen plaats je hetzelfde aantal <strong>data</strong> items met <code>&lt;td&gt;&lt;/td&gt;</code> tags zoals in de andere rijen.
+    </p>
+    <p>
+        Om nog een <strong>kolom</strong> toe te voegen, voeg je aan elke rij een extra <strong>data</strong> item toe met een set
+        <code>&lt;td&gt;&lt;/td&gt;</code> tags aan <strong>elke</strong> rij. Voeg ook een extra <strong>header</strong> item toe aan de eerste rij met behulp van de tags <code>&lt;th&gt;&lt;/th&gt;</code>.
+    </p>
+
+    <div class="accordion" id="howItWorksExplained">
+        <div class="card collapseCard">
+            <button class="btn collapseButton" type="button" data-toggle="collapse" data-target="#collapseHowItWorksExplained" aria-expanded="true" aria-controls="collapseHowItWorksExplained">
+              <div class="card-header collapseHeader" id="headingHowItWorksExplained">
+                <h2 class="mb-0">
+                  <img src="images/info.svg" alt="" class="left small-icon"/>
+                  <span class="collapseText left">Hoe werkt het?</span>
+                  <i class="fas fa-angle-down collapseIcon"></i>
+                </h2>
+              </div>
+            </button>
+
+            <div id="collapseHowItWorksExplained" class="collapse hide" aria-labelledby="headingHowItWorksExplained" data-parent="#howItWorksExplained">
+                <div class="card-body">
+                    <p>
+                        Laten we al die tags eens bekijken. Het is een beetje zoals de code voor een lijst (
+                        <code>&lt;ul&gt;</code> en <code>&lt;ol&gt;</code> weet je nog?) maar met meer niveaus.
+                    </p>
+                    <p>
+                        Elk paar <code>&lt;tr&gt;&lt;/tr&gt;</code> tags is een rij, dus alles daar tussenin wordt op één regel weergegeven.
+                    </p>
+                    <p>
+                        De eerste rij bevat <code>&lt;th&gt;&lt;/th&gt;</code> tags. Deze worden gebruikt voor de headers,
+                        dus de kolomtitels worden daartussenin geplaatst. Er is één paar voor elke kolom die je in je tabel hebt.
+                    </p>
+                    <p>
+                        De tags <code>&lt;td&gt;&lt;/td&gt;</code> beschrijven wat tabelgegevens wordt genoemd. Dat staat ook in alle
+                         andere rijen. Deze zijn vergelijkbaar met de tags van het lijstitem <code>&lt;li&gt;&lt;/li&gt;</code>: alles ertussen is één item in je tabelrij.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <ul>
+      <li>
+        Als je aan het einde van het bestand <code>styles.css</code> kijkt, zie je de CSS-code die beschrijft hoe de tabel eruit zou moeten zien.
+         Je hoeft het niet allemaal te begrijpen! Maar je kan experimenteren met het wijzigen van de tekst-, rand- en achtergrondkleuren om
+          je eigen stijl te ontwerpen.
+      </li>
+    </ul>
+
+    <div style="background-color: black; color: #fff; padding: 8px;">
+        <code style="background-color:black;">
+          <span class="purple">table, th, td</span> {<br />
+            <span class="oker" style="padding-left: 24px">border</span>: 1px solid HoneyDew;<br />
+            <span class="oker" style="padding-left: 24px">border-collapse</span>: collapse;<br />
+          }<br />
+          <span class="purple">tr</span> {<br />
+            <span class="oker" style="padding-left: 24px">background-color</span>: PaleTurquoise;<br />
+          }<br />
+          <span class="purple">th, td</span> {<br />
+            <span class="oker" style="padding-left: 24px">vertical-align</span>: top;<br />
+            <span class="oker" style="padding-left: 24px">padding</span>: 5px;<br />
+            <span class="oker" style="padding-left: 24px">text-align</span>: left;<br />
+          }<br />
+          <span class="purple">th</span> {<br />
+            <span class="oker" style="padding-left: 24px">color</span>: purple;<br />
+          }<br />
+          <span class="purple">td</span> {<br />
+            <span class="oker" style="padding-left: 24px">color</span>: purple;<br />
+          }<br />
+        </code>
+    </div>
+    <br />
+
+<p>
+  Zie je dat sommige selectors komma's gebruiken, bijvoorbeeld <code>tabel, th, td</code>?
+  Dat is een <strong>lijst met selectors</strong>: het betekent dat het van toepassing is op alle <code>&lt;th&gt;</code> tags
+  en alle <code>&lt;td&gt;</code> tags. Het scheelt een hoop regels typen voor elke selector!
+</p>
 
     <div class="buttonbar">
         <button id="back" data-item="menubarlooks.html" onclick="handleMenuClick(this)">

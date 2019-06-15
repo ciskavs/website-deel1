@@ -8,6 +8,124 @@
 
 <body>
     <h2>Een menubalk maken</h2>
+    <p>
+        Leer hoe je je navigatiemenu kunt transformeren in een cool uitziende menubalk, gewoon door meer CSS-regels toe te voegen aan de stylesheet.
+    </p>
+    <img src="images/cool-menu.png" alt="" class="img-responsive">
+
+    <ul>
+        <li>
+            Ga naar het opmaakbestand op het tabblad <code>styles.css</code>. Klik <strong>onder</strong> een sluitende accolade <code>}</code> en druk op <strong>Enter</strong> om een nieuwe lege regel te maken. Voeg de volgende CSS-regel toe:
+        </li>
+    </ul>
+
+    <div style="background-color: black; color: #fff; padding: 8px;">
+        <code style="background-color:black;">
+
+      <span class="purple">nav ul</span> {<br />
+      <span class="oker" style="padding-left:24px;">background-color</span>: tomato;<br />
+      }
+  </code>
+    </div>
+    <br />
+    <p>
+        Zie je dat je twee selectors gebruikte in plaats van één? Als je alleen de <code>ul</code> selector zou gebruiken, zou de regel van invloed zijn op alle ongeordende lijsten op je website. Door de <code>nav</code> selector ook toe te voegen, is
+        deze alleen van toepassing op lijsten die zich tussen de <code>nav</code> tags bevinden.
+    </p>
+    <img src="images/menu-tomato.png" alt="" class="img-responsive">
+
+    <p>
+        Laten we de opsommingstekens weghalen. Dat zijn de stippen voor elk onderdeel in de lijst.
+    </p>
+    <ul>
+        <li>
+            Voeg het volgende toe aan het bestand <code>styles.css</code>. Typ het opnieuw op een nieuwe regel na een <code>}</code> zodat het niet in een andere css-regel staat.
+        </li>
+    </ul>
+    <div style="background-color: black; color: #fff; padding: 8px;">
+        <code style="background-color:black;">
+
+      <span class="purple">nav ul li</span> {<br />
+      <span class="oker" style="padding-left:24px;">list-style-type</span>: none;<br />
+      }
+  </code>
+    </div>
+    <br />
+    <p>
+        Zie je dat deze set regels drie selectors heeft: het selecteert alle <code>li</code> tags die zich in een <code>ul</code> lijst bevinden die zich binnen een <code>nav</code> sectie bevindt. Poeh!
+    </p>
+
+    <img src="images/menu-list-no-bullets.png" alt="" class="img-responsive">
+
+    <p>
+        Laten we nu de lijst horizontaal (van links naar rechts) maken in plaats van verticaal (van boven naar beneden).
+    </p>
+    <ul>
+        <li>
+            Binnen de nieuwe CSS-regel die je zojuist hebt gemaakt, voeg je de volgende regel toe: <code>display: inline;</code>.
+        </li>
+    </ul>
+    <img src="images/menu-inline.png" alt="" class="img-responsive">
+    <ul>
+        <li>
+            De menu-items zijn nu allemaal in elkaar geplet, dus laten we ook de eigenschappen <code>margin-right</code> (rechter marge) en
+            <code>margin-left</code> (linker marge) toevoegen om ze een beetje ruimte te geven. De CSS-code zou er nu als volgt uit moeten zien:
+        </li>
+    </ul>
+    <div style="background-color: black; color: #fff; padding: 8px;">
+        <code style="background-color:black;">
+          <span class="purple">nav ul li</span> {<br />
+          <span class="oker" style="padding-left:24px;">list-style-type</span>: none;<br />
+          <span class="oker" style="padding-left:24px;">display</span>: inline;<br />
+          <span class="oker" style="padding-left:24px;">margin-right</span>: 10px;<br />
+          <span class="oker" style="padding-left:24px;">margin-left</span>: 10px;<br />
+          }
+        </code>
+    </div>
+    <br />
+
+    <p>
+      Onthoud: <code>10px</code> betekent tien pixels.
+    </p>
+    <p>
+      Laten we het menu veranderen zodat je kunt zien op welke pagina je bent. Dit onderdeel staat niet in de stylesheet.
+    </p>
+    <ul>
+      <li>
+        Begin met de home pagina. Ga naar het <code>index.html</code> bestand. Verwijder in de lijst met menu items de link tags vóór en na
+         het woord <code>Home</code>, zodat het lijstitem voor de home pagina alleen tekst tussen de tags <code>&lt;li&gt;&lt;/li&gt;</code> is,
+         zoals deze: <code>&lt;li&gt;Startpagina&lt;/li&gt;</code>.
+      </li>
+      <li>
+        Ga nu naar elk van de andere bestanden en doe hetzelfde. Steeds verwijder je de link tags voor de pagina die je aan het bewerken bent.
+        Zo is bijvoorbeeld in het bestand <code>muziek.html</code> de link tag in het lijstitem <code>Muziek</code> verwijderd:
+      </li>
+    </ul>
+    <div style="background-color: black; color: #fff; padding: 8px;">
+        <code style="background-color:black;">
+          &lt;<span class="pink">header</span>&gt;<br />
+          <span style="padding-left:24px;">&lt;<span class="pink">nav</span>&gt;</span><br />
+          <span style="padding-left:48px;">&lt;<span class="pink">ul</span>&gt;</span><br />
+          <span style="padding-left:72px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">index.html</span>"&gt;Home&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+          <span style="padding-left:72px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">attracties.html</span>"&gt;Plaatsen om te bezoeken&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+          <span style="padding-left:72px;">&lt;<span class="pink">li</span>&gt;Muziek&lt;/<span class="pink">li</span>&gt;</span><br />
+          <span style="padding-left:72px;">&lt;<span class="pink">li</span>&gt;&lt;<span class="pink">a href</span>="<span class="green">eten.html</span>"&gt;Eetgelegenheden&lt;/<span class="pink">a</span>&gt;&lt;/<span class="pink">li</span>&gt;</span><br />
+          <span style="padding-left:48px;">&lt;/<span class="pink">ul</span>&gt;</span><br />
+          <span style="padding-left:24px;">&lt;/<span class="pink">nav</span>&gt;</span><br />
+          &lt;/<span class="pink">header</span>&gt;<br />
+        </code>
+    </div>
+    <br />
+<ul>
+  <li>
+    Verken je pagina's door op de links te klikken. Zie je hoe de menubalk de pagina weergeeft die je gebruikt als platte tekst in plaats van een link?
+  </li>
+</ul>
+<img src="images/menu-attracties.png" alt="" class="img-responsive">
+
+<p>
+  Op de volgende kaart leer je nog meer CSS-trucs om de menubalk er geweldig uit te laten zien.
+</p>
 
     <div class="buttonbar">
         <button id="back" data-item="navigation.html" onclick="handleMenuClick(this)">
