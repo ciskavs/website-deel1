@@ -38,10 +38,7 @@ ul.menu li a:before {
 ul.menu li a {
     display: block;
     margin-left: 32px;
-}
-
-ul.menu li a:visited {
-    color: #f3524f;
+    color: #724695;
 }
 
 #content-sectie {
