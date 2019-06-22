@@ -10,7 +10,7 @@
     <h2>De menubalk opmaken</h2>
 
     <p>
-        Met CSS heb je oneindig veel mogelijkheden om je menubalk er geweldig uit te laten zien.
+        Met CSS heb je oneindig veel mogelijkheden om je menubalk er cool uit te laten zien.
     </p>
     <ul>
         <li>
@@ -20,7 +20,7 @@
             Zoek je <code>nav ul</code> selector en voeg meer regels toe zodat het er zo uitziet:
         </li>
     </ul>
-    <div style="background-color: black; color: #fff; padding: 8px;">
+    <div class="codeblock">
         <code style="background-color:black;">
           <span class="purple">nav ul</span> {<br />
           <span class="oker" style="padding-left:24px;">background-color</span>: tomato;<br />
@@ -39,38 +39,37 @@
 
     <ul>
         <li>
-            Om de onderstreping van de links te verwijderen, voeg je de volgende code toe op een nieuwe regel na de sluitende accolade <code>}</code> voor de <code>nav ul li</code> regels. Je kunt het na elke <code>}</code>, maar het is een goed idee
-            om gerelateerde dingen bij elkaar te houden, zodat het gemakkelijker te vinden is!
+            Om de onderstreping van de links te verwijderen, voeg je de volgende code toe op een nieuwe regel na de sluitende accolade <code>}</code>
+            van de <code>nav ul li</code> regels. Je kunt het na elke <code>}</code> toevoegen, maar het is een goed idee
+            om dingen die bij elkaar horen, bij elkaar te houden, zodat het gemakkelijker te vinden is!
         </li>
     </ul>
 
-    <div style="background-color: black; color: #fff; padding: 8px;">
+    <div class="codeblock">
         <code style="background-color:black;">
           <span class="purple">nav ul li a</span> {<br />
           <span class="oker" style="padding-left:24px;">text-decoration</span>: none;<br />
           }
         </code>
     </div>
-    <br />
 <p>
   De bovenstaande regel is van toepassing op links <code>&lt;a&gt;</code>
-   in lijstitems <code>&lt;li&gt;</code> in een ongeordende lijst <code>&lt;ul&gt;</code> in een navigatiegedeelte <code>&lt;nav&gt;</code>.
+   in lijst-items <code>&lt;li&gt;</code> in een ongeordende lijst <code>&lt;ul&gt;</code> in een navigatiegedeelte <code>&lt;nav&gt;</code>.
    Wauw, dat zijn vier selectors!
 </p>
 <img src="images/menu-no-underlining.png" alt="" class="img-responsive">
-
+<br /><br />
 <p>
-  Weet je nog hoe je de link tags uit sommige lijstitems in de <code>&lt;nav&gt;</code>
-  hebt verwijderd, zodat je gemakkelijk kunt zien op welke pagina je bent?
-  Waarom niet ook de tekstkleur veranderen van die navigatielijstitems
-  die geen koppelingen zijn!
+  Weet je nog hoe je de link tags (<code>&lt;a&gt;&lt;/a&gt;</code>) uit sommige lijst-items in de <code>&lt;nav&gt;</code>
+  hebt verwijderd, zodat je gemakkelijk kunt zien op welke pagina je bent? Laten we ook de tekstkleur
+  veranderen van die navigatie lijst-items die geen koppelingen zijn!
 </p>
 <ul>
   <li>
 Zoek de <code>nav ul li</code> selector en voeg <strong>binnen</strong> de accolades de volgende regel toe:
   </li>
 </ul>
-<div style="background-color: black; color: #fff; padding: 8px;">
+<div class="codeblock">
     <code style="background-color:black;">
       <span class="oker">color</span>: PapayaWhip;<br />
     </code>
@@ -91,7 +90,7 @@ Je kan ook de eigenschap <code>color</code> toevoegen aan de <code>nav ul li a</
   </li>
 </ul>
 <p>
-  De eigenschap van de <code>border-radius</code> is een heel gemakkelijke
+  De eigenschap van de <code>border-radius</code> (ronde hoeken van de rand) is een heel gemakkelijke
   manier om alles er cooler te laten uitzien!
 </p>
 <img src="images/menu-round-corners.png" alt="" class="img-responsive">

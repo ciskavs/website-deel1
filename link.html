@@ -10,12 +10,12 @@
     <h2>Koppelingen maken</h2>
 
     <p>
-        Hier leer je hoe je een link (koppeling) kunt maken die je naar een andere pagina brengt wanneer erop wordt geklikt.
+        Hier leer je hoe je een link (koppeling) kunt maken die je naar een andere pagina brengt als je erop klikt.
     </p>
     <ul>
-        <li>Voeg de volgende code toe aan de hoofdgedeelte van <code style="background-color:black;">index.html</code>:</li>
+        <li>Voeg de volgende code toe aan <code style="background-color:black;">index.html</code>:</li>
     </ul>
-    <div style="background-color: black; color: #fff; padding: 8px;">
+    <div class="codeblock">
         <code style="background-color:black;">
         &lt;<span class="pink">a href</span>="">Klik hier&lt;<span class="pink">/a</span>&gt;
       </code>
@@ -27,6 +27,7 @@
     <ul>
         <li>Klik op de link om te zien wat er gebeurt. Het doet helemaal niets, toch?</li>
     </ul>
+    <br />
     <p>
         Dat komt omdat het <code style="background-color:black;">href</code> attribuut op dit moment leeg is. Het moet de <strong>URL</strong> (webadres) bevatten van de pagina waarnaar je een koppeling wilt maken.
     </p>
@@ -44,12 +45,11 @@
             Klik in je index.html bestand tussen de aanhalingstekens na <code style="background-color:black;">href=</code> en druk tegelijkertijd op de toetsen Ctrl (of cmd) en V om de zojuist gekopieerde URL in te plakken. Je code zou er nu ongeveer zo uit moeten zien:
         </li>
     </ul>
-    <div style="background-color: black; color: #fff; padding: 8px;">
+    <div class="codeblock">
         <code style="background-color:black;">
     &lt;<span class="pink">a href</span>="<span class="green">https://nl.wikipedia.org/wiki/Leiden</span>">Klik hier&lt;<span class="pink">/a</span>&gt;
   </code>
     </div>
-    <br />
     <p>
         Je hebt zojuist je eerste link gemaakt! Klik erop om te zien of het nu werkt.
     </p>
@@ -61,7 +61,7 @@
               <div class="card-header collapseHeader" id="headingOtherSiteExplained">
                 <h2 class="mb-0">
                   <img src="images/info.svg" alt="" class="left small-icon"/>
-                  <span class="collapseText left">Links naar andere websites</span>
+                  <span class="collapseText left">Links naar andere websites werken niet altijd</span>
                   <i class="fas fa-angle-down collapseIcon"></i>
                 </h2>
               </div>
@@ -69,26 +69,26 @@
 
             <div id="collapseOtherSiteExplained" class="collapse hide" aria-labelledby="headingOtherSiteExplained" data-parent="#otherSiteExplained">
                 <div class="card-body">
-                    Trinket heeft problemen met sommige webadressen. Je kunt URL's van andere websites dan Wikipedia proberen, maar deze werken mogelijk niet in jouw trinket. Als je echter je project zou downloaden en de bestanden in een webbrowser zou zien, zou je de koppelingen
-                    wel zien werken.
+                    Trinket heeft problemen met sommige webadressen. Je kunt URL's van andere websites dan Wikipedia proberen, maar deze werken misschien niet in jouw trinket.
+                    Als je je project zou downloaden en de bestanden in een webbrowser zou zien, werken de koppelingen wel.
                 </div>
             </div>
         </div>
     </div>
+    <br />
 
     <ul>
         <li>
             Plaats een afbeelding tussen de <code style="background-color:black;">&lt;a&gt;&lt;/a&gt;</code> tags in plaats van de woorden <code style="background-color:black;">Klik hier</code>, zoals hieronder:
         </li>
     </ul>
-    <div style="background-color: black; color: #fff; padding: 8px;">
+    <div class="codeblock">
         <code style="background-color:black;">
 &lt;<span class="pink">a href</span>="<span class="green">https://nl.wikipedia.org/wiki/Leiden</span>"><br />
   <span style="padding-left:24px;">&lt;<span class="pink">img src</span>="<span class="green">tito.png"</span> alt="<span class="green">Tito de hond</span>" width="<span class="green">100px</span>" /&gt;</span><br />
  &lt;<span class="pink">/a</span>&gt;
 </code>
     </div>
-    <br />
 
     <ul>
         <li>
@@ -99,7 +99,7 @@
         Je kan ook een link naar andere elementen van je webpagina plaatsen, zoals in een alinea of zelfs in een lijst. Hier is een voorbeeld van een zin met een link erin:
     </p>
 
-    <div style="background-color: black; color: #fff; padding: 8px;">
+    <div class="codeblock">
         <code style="background-color:black;">
           &lt;<span class="pink">p</span>&gt;<br />
           <span style="padding-left:24px;">
@@ -109,12 +109,11 @@
      &lt;<span class="pink">/p</span>&gt;
     </code>
     </div>
-    <br />
 
     <h3>Uitdaging: plaats een link in een lijst</h3>
     <ul>
         <li>
-            Kijk of je een lijst kunt maken met een link in een van de lijstitems.
+            Kijk of je een lijst kunt maken met een link in een van de lijst-items.
         </li>
     </ul>
 

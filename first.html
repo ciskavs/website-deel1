@@ -8,12 +8,12 @@
 
 <body>
     <h2>Je eerste webpagina!</h2>
-    <ul>
+      <ul>
         <li>
             Klik in het linker vak, het <strong>code venster</strong>, op het tabblad dat <code style="background-color:black;">index.html</code> heet.
         </li>
         <li>
-            Zoek de regel met <code style="background-color:black;">Welkom in Nederland!</code> en verander de tekst Nederland in de naam van je eigen woonplaats. Aan de rechterkant zou je nu je aanpassing moeten zien.<br /> Let op dat je de tags <code style="background-color:black;">&lt;p&gt;</code> aan het begin
+            Zoek de regel met <code style="background-color:black;">Welkom in Nederland!</code> en verander de tekst Nederland in de naam van je eigen woonplaats. Aan de rechterkant zou je nu je aanpassing moeten zien.<br /> Let op dat je de markeringstekens <code style="background-color:black;">&lt;p&gt;</code> aan het begin
             van de regel en <code style="background-color:black;">&lt;/p&gt;</code> aan het einde van de regel <strong>niet</strong> verwijdert.<br />
         </li>
     </ul>
@@ -29,7 +29,7 @@
                       <div class="card-header collapseHeader" id="headingHtmlTagsExplained">
                         <h2 class="mb-0">
                           <img src="images/info.svg" alt="" class="left small-icon"/>
-                          <span class="collapseText left">Uitleg over HTML en tags</span>
+                          <span class="collapseText left">Uitleg over HTML en markeringstekens (tags)</span>
                           <i class="fas fa-angle-down collapseIcon"></i>
                         </h2>
                       </div>
@@ -37,11 +37,11 @@
 
                     <div id="collapseHtmlTagsExplained" class="collapse hide" aria-labelledby="headingHtmlTagsExplained" data-parent="#htmlTagsExplained">
                         <div class="card-body">
-                            <strong>HTML</strong> is de code die een webpagina maakt. <br /> De <code style="background-color:black;">.html</code> in de bestandsnaam vertelt de browser dat het bestand een webpagina is. Zo weet de browser dat 'ie moet zoeken naar <strong>tags</strong>                            die aangeven wat moet worden weergegeven.
+                            <strong>HTML</strong> is de code die een webpagina maakt. <br /> De <code style="background-color:black;">.html</code> in de bestandsnaam vertelt de browser dat het bestand een webpagina is. Zo weet de browser dat 'ie moet zoeken naar markeringstekens (in het Engels <strong>tags</strong> genoemd) die aangeven wat moet worden weergegeven.
                             <br /> HTML-tags zoals <code style="background-color:black;">&lt;p&gt;</code> en <code style="background-color:black;">&lt;/p&gt;</code> definiëren verschillende delen van een pagina, bijvoorbeeld alinea's, koppen of de hoofdtekst. De stukjes worden allemaal <strong>elementen</strong> genoemd.
                             Zie ze als bouwstenen.
                             <br />
-                            <h3 class="collapseH3">Waarom heb ik twee tags nodig?</h3><br /> Je hebt een <strong>openingstag</strong> en een <strong>afsluitende</strong> tag nodig om de browser te laten weten waar elementen <strong>beginnen</strong> en <strong>eindigen</strong>. Dus voor een alinea zegt de opening
+                            <h3 class="collapseH3">Waarom heb ik twee tags nodig?</h3>Je hebt een <strong>openingstag</strong> en een <strong>afsluitende</strong> tag nodig om de browser te laten weten waar elementen <strong>beginnen</strong> en <strong>eindigen</strong>. Dus voor een alinea zegt de opening
                             <code style="background-color:black;">&lt;p&gt;</code>-tag: "Hier komt wat tekst en ik wil dat je die als een alinea weergeeft." De afsluitende <code style="background-color:black;">&lt;/p&gt;</code>-tag vertelt de browser waar de alinea eindigt.
                             <br /> Alles tussen de tags <code style="background-color:black;">&lt;body&gt;</code> en <code style="background-color:black;">&lt;/body&gt;</code> is je webpagina.<br />
                             <ul>
@@ -53,15 +53,14 @@
                     </div>
                 </div>
             </div>
-            <br />
         </li>
         <li>
             <code style="background-color:black;">&lt;h1&gt;</code> wordt een <strong>heading</strong> genoemd. Een heading kan gaan van <code style="background-color:black;">&lt;h1&gt;</code> tot <code style="background-color:black;">&lt;h6&gt;</code>. Probeer de cijfers in de heading aan te passen en kijk wat er verandert. Let op dat je zowel
-            de openings tag als de afsluit tag moet aanpassen zodat ze hetzelfde zijn!
+            de openingstag als de afsluitende tag moet aanpassen zodat ze hetzelfde zijn!
         </li>
         <li>
-            Zoek de code voor de alinea waarin staat 'Mijn website gaat over Nederland'. en verander het zodat het er zo uitziet:<br />
-            <div style="background-color: black; color: #fff; padding: 8px;">
+            Zoek de code voor de alinea waarin staat 'Mijn website gaat over Nederland' en verander het zodat het er zo uitziet:
+            <div class="codeblock">
                 <code style="background-color:black;">
                   &lt;<span class="pink">p</span>&gt;
                   <div style="padding-left: 24px;">
@@ -70,7 +69,8 @@
                   </div>
                   &lt;<span class="pink">/p</span>&gt;
                 </code>
-            </div><br /> Wat denk je dat de tags &lt;<span class="pink">em</span>&gt; &lt;<span class="pink">/em</span>&gt; en &lt;<span class="pink">strong</span>&gt; &lt;<span class="pink">/strong</span>&gt; doen?
+            </div>
+            Wat denk je dat de tags <code>&lt;em&gt; &lt;/em&gt;</code> en <code>&lt;strong&gt; &lt;/strong&gt;</code> doen?
         </li>
     </ul>
     <img src="images/trinket-first.png" alt="Trinket" class="img-responsive">

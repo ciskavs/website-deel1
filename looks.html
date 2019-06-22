@@ -10,14 +10,14 @@
     <h2>Bepalen hoe het eruit ziet</h2>
 
     <p>
-        De code die beschrijft hoe een website eruitziet, wordt CSS genoemd.
+        De code die beschrijft hoe een website eruitziet, wordt <strong>CSS</strong> genoemd.
     </p>
 
     <ul>
       <li>
         Kijk naar de tabbladen bovenaan het codepaneel en ga naar het bestand <code style="background-color:black;">styles.css</code> door op het tabblad met die naam te klikken.
         Het bestand bevat de volgende tekst:
-        <div style="background-color: black; color: #fff; padding: 8px;">
+        <div class="codeblock">
           <code style="background-color:black;">
             <span class="purple">body</span> {<br />
               <span class="oker" style="padding-left:24px;">background-color</span>: white;<br />
@@ -48,7 +48,7 @@
                   Als je de bovenkant van het <code style="background-color:black;">index.html</code> bestand bekijkt, zie je de volgende regel:
                   <br />
 
-                  <div style="background-color: black; color: #fff; padding: 8px;">
+                  <div class="codeblock">
                     <code style="background-color:black;">
                       &lt;<span class="pink">link type</span>=
                       <span class="green">"text / css"</span>
@@ -56,14 +56,13 @@
                       <span class="pink">href</span> = "<span class="green">styles.css</span>" /&gt;
                     </code>
                   </div>
-                  <br />
                   De bovenstaande regel vertelt de browser om te zoeken naar een speciaal bestand met de naam <code style="background-color:black;">styles.css</code>.
-                  Dit speciale bestand wordt een <strong>style sheet</strong> (stijlpagina) genoemd. Je kunt een stylesheet herkennen
+                  Dit speciale bestand wordt een <strong>stylesheet</strong> (stijlblad) genoemd. Je kunt een stylesheet herkennen
                   door de <code style="background-color:black;">.css</code> in de bestandsnaam.
                   <br /><br />
-                  Een stijlblad bevat <strong>regels</strong> voor hoe elk element op uw webpagina eruit zou moeten zien.
+                  Een stylesheet bevat <strong>regels</strong> voor hoe elk element op je webpagina eruit zou moeten zien.
                   <br /><br />
-                  De accolades <code style="background-color:black;">{}</code> en de code ertussen zijn een reeks <strong>CSS-regels</strong>.
+                  De accolades <code style="background-color:black;">{ }</code> en de code ertussen zijn <strong>CSS-regels</strong>.
                   Het woord <code style="background-color:black;">body</code> betekent dat de regels gelden voor alle <code style="background-color:black;">&lt;body&gt;</code> elementen op je website.
                   We noemen het stukje vóór de accolades een <strong>selector</strong>. Dus in dit geval is het de selector voor de body elementen.
                   <br /><br />
@@ -71,7 +70,7 @@
                   <ul>
                     <li>Een <strong>eigenschap</strong> aan de linkerkant, gevolgd door een dubbele punt <code style="background-color:black;">:</code></li>
                     <li>Een <strong>waarde</strong> voor de eigenschap aan de rechterkant na de dubbele punt</li>
-                    <li>Een puntkommasymbool <code style="background-color:black;">;</code> aan het einde</li>
+                    <li>Een puntkomma <code style="background-color:black;">;</code> aan het einde</li>
                   </ul>
                 </div>
             </div>
@@ -80,8 +79,8 @@
 
     <ul>
       <li>
-        Laten we regels toevoegen om de weergave van de tekst te veranderen. Voeg twee nieuwe lijnen toe binnen de accolades:<br />
-        <div style="background-color: black; color: #fff; padding: 8px;">
+        Laten we regels toevoegen om de weergave van de tekst te veranderen. Voeg twee nieuwe regels toe binnen de accolades:<br />
+        <div class="codeblock">
           <code style="background-color:black;">
             <span class="purple">body</span> {<br />
               <span class="oker" style="padding-left:24px;">background-color</span>: LightSkyBlue;<br />
@@ -96,7 +95,7 @@
       <li>
         Je kunt ook aparte regels schrijven voor de kopjes en de alinea's. Voor <code style="background-color:black;">&lt;h1&gt;</code> kopjes gebruik je de <code style="background-color:black;">h1</code> selector.
         Onder de sluitende accolade die de CSS-regel voor de <code style="background-color:black;">body</code> bevat, voeg je de volgende code toe:
-        <div style="background-color: black; color: #fff; padding: 8px;">
+        <div class="codeblock">
           <code style="background-color:black;">
             <span class="purple">h1</span> {<br />
               <span class="oker" style="padding-left:24px;">color</span>: orange;<br />
@@ -119,7 +118,7 @@
         Probeer regels toe te voegen voor de <code style="background-color:black;">&lt;h2&gt;</code> kopjes, met behulp van de <code style="background-color:black;">h2</code> selector.
       </li>
       <li>
-        Waarom niet experimenteren met verschillende kleurencombinaties voor de tekst en achtergrond? Er zijn veel kleuren beschikbaar om te gebruiken.
+        Probeer verschillende kleurencombinaties uit voor de tekst en de achtergrond. Er zijn veel kleuren beschikbaar om te gebruiken.
         Je vindt ze <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">hier</a>.
       </li>
     </ul>
