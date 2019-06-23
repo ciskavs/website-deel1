@@ -51,11 +51,13 @@ img {
     background-color: #4ab858;
     border: none;
     border-radius: 8px;
-    width: 300px;
+    max-width: 300px;
     height: 40px;
     color: fff;
     font-weight: bold;
     float: right;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 a#next {
