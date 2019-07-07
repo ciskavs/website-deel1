@@ -10,7 +10,7 @@
             /*search for elements with a certain atrribute:*/
             file = elmnt.getAttribute("w3IncludeHtml");
             if (file) {
-                /*make an HTTP request using the attribute value as the file name:*/
+                /* Make an HTTP request using the attribute value as the file name: */
                 xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                     if (this.readyState == 4) {
@@ -20,14 +20,13 @@
                         if (this.status == 404) {
                             elmnt.innerHTML = "Page not found.";
                         }
-                        /*remove the attribute, and call this function once more:*/
+                        /* Remove the attribute, and call this function once more: */
                         elmnt.removeAttribute("w3IncludeHtml");
                         includeHTML();
                     }
                 }
                 xhttp.open("GET", file, true);
                 xhttp.send();
-                /*exit the function:*/
                 return;
             }
         }
@@ -39,6 +38,14 @@
         contentDiv.setAttribute("w3IncludeHtml", href);
         includeHTML();
         window.scrollTo(0,0);
+
+        /* Only the current page should have a different coloured link in the menu */
+        var previousPage = document.getElementsByClassName('bezig');
+        if (previousPage.length > 0) {
+          previousPage[0].classList.remove('bezig');
+        }
+        var currentPage = document.getElementById(href);
+        currentPage.classList.add('bezig');
     }
 </script>
 
@@ -71,20 +78,20 @@
             <div class="col-3">
                 <ul class="menu">
                     <li>
-                        <a href="#" data-item="intro.html" onclick="handleMenuClick(this)">Introductie</a>
-                        <a href="#" data-item="setup.html" onclick="handleMenuClick(this)">Klaarzetten</a>
-                        <a href="#" data-item="first.html" onclick="handleMenuClick(this)">Je eerste webpagina!</a>
-                        <a href="#" data-item="looks.html" onclick="handleMenuClick(this)">Bepalen hoe het eruit ziet</a>
-                        <a href="#" data-item="images.html" onclick="handleMenuClick(this)">Plaatjes toevoegen</a>
-                        <a href="#" data-item="mapvideo.html" onclick="handleMenuClick(this)">Een kaart of video toevoegen</a>
-                        <a href="#" data-item="list.html" onclick="handleMenuClick(this)">Een lijst maken</a>
-                        <a href="#" data-item="link.html" onclick="handleMenuClick(this)">Koppelingen maken</a>
-                        <a href="#" data-item="morepages.html" onclick="handleMenuClick(this)">Meer pagina's toevoegen</a>
-                        <a href="#" data-item="navigation.html" onclick="handleMenuClick(this)">Navigeren</a>
-                        <a href="#" data-item="menubar.html" onclick="handleMenuClick(this)">Een menubalk maken</a>
-                        <a href="#" data-item="menubarlooks.html" onclick="handleMenuClick(this)">De menubalk opmaken</a>
-                        <a href="#" data-item="table.html" onclick="handleMenuClick(this)">Een tabel toevoegen</a>
-                        <a href="#" data-item="next.html" onclick="handleMenuClick(this)">Wat nu?</a>
+                        <a href="#" id="intro.html" data-item="intro.html" class="bezig" onclick="handleMenuClick(this)">Introductie</a>
+                        <a href="#" id="setup.html" data-item="setup.html" onclick="handleMenuClick(this)">Klaarzetten</a>
+                        <a href="#" id="first.html" data-item="first.html" onclick="handleMenuClick(this)">Je eerste webpagina!</a>
+                        <a href="#" id="looks.html" data-item="looks.html" onclick="handleMenuClick(this)">Bepalen hoe het eruit ziet</a>
+                        <a href="#" id="images.html" data-item="images.html" onclick="handleMenuClick(this)">Plaatjes toevoegen</a>
+                        <a href="#" id="mapvideo.html" data-item="mapvideo.html" onclick="handleMenuClick(this)">Een kaart of video toevoegen</a>
+                        <a href="#" id="list.html" data-item="list.html" onclick="handleMenuClick(this)">Een lijst maken</a>
+                        <a href="#" id="link.html" data-item="link.html" onclick="handleMenuClick(this)">Koppelingen maken</a>
+                        <a href="#" id="morepages.html" data-item="morepages.html" onclick="handleMenuClick(this)">Meer pagina's toevoegen</a>
+                        <a href="#" id="navigation.html" data-item="navigation.html" onclick="handleMenuClick(this)">Navigeren</a>
+                        <a href="#" id="menubar.html" data-item="menubar.html" onclick="handleMenuClick(this)">Een menubalk maken</a>
+                        <a href="#" id="menubarlooks.html" data-item="menubarlooks.html" onclick="handleMenuClick(this)">De menubalk opmaken</a>
+                        <a href="#" id="table.html" data-item="table.html" onclick="handleMenuClick(this)">Een tabel toevoegen</a>
+                        <a href="#" id="next.html" data-item="next.html" onclick="handleMenuClick(this)">Wat nu?</a>
                     </li>
                 </ul>
             </div>
