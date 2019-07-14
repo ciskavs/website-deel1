@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h2>Koppelingen maken</h2>
+    <h2>Links maken</h2>
 
     <p>
         Hier leer je hoe je een link (koppeling) kunt maken die je naar een andere pagina brengt als je erop klikt.
@@ -17,7 +17,7 @@
     </ul>
     <div class="codeblock">
         <code style="background-color:black;">
-        &lt;<span class="pink">a href</span>="">Klik hier&lt;<span class="pink">/a</span>&gt;
+        &lt;<span class="pink">a href</span>="">Klik hier&lt;/<span class="pink">a</span>&gt;
       </code>
     </div>
     <br />
@@ -29,7 +29,7 @@
     </ul>
     <br />
     <p>
-        Dat komt omdat het <code style="background-color:black;">href</code> attribuut op dit moment leeg is. Het moet de <strong>URL</strong> (webadres) bevatten van de pagina waarnaar je een koppeling wilt maken.
+        Dat komt omdat het <code style="background-color:black;">href</code> attribuut op dit moment leeg is. Het moet de <strong>URL</strong> (webadres) bevatten van de pagina waarnaar je een link wilt maken.
     </p>
     <ul>
         <li>
@@ -42,12 +42,12 @@
     <img src="images/webadres.png" alt="" class="img-responsive">
     <ul>
         <li>
-            Klik in je index.html bestand tussen de aanhalingstekens na <code style="background-color:black;">href=</code> en druk tegelijkertijd op de toetsen Ctrl (of cmd) en V om de zojuist gekopieerde URL in te plakken. Je code zou er nu ongeveer zo uit moeten zien:
+            Klik in je index.html bestand tussen de aanhalingstekens na <code style="background-color:black;">href=</code> en druk tegelijkertijd op de toetsen Ctrl (of cmd) en V om de URL die je zojuist gekopieerd hebt te plakken. Je code zou er nu ongeveer zo uit moeten zien:
         </li>
     </ul>
     <div class="codeblock">
         <code style="background-color:black;">
-    &lt;<span class="pink">a href</span>="<span class="green">https://nl.wikipedia.org/wiki/Leiden</span>">Klik hier&lt;<span class="pink">/a</span>&gt;
+    &lt;<span class="pink">a href</span>="<span class="green">https://nl.wikipedia.org/wiki/Leiden</span>">Klik hier&lt;/<span class="pink">a</span>&gt;
   </code>
     </div>
     <p>
@@ -70,7 +70,7 @@
             <div id="collapseOtherSiteExplained" class="collapse hide" aria-labelledby="headingOtherSiteExplained" data-parent="#otherSiteExplained">
                 <div class="card-body">
                     Trinket heeft problemen met sommige webadressen. Je kunt URL's van andere websites dan Wikipedia proberen, maar deze werken misschien niet in jouw trinket.
-                    Als je je project zou downloaden en de bestanden in een webbrowser zou zien, werken de koppelingen wel.
+                    Als je je project zou downloaden en de bestanden in een webbrowser zou zien, zouden de links wel moeten werken.
                 </div>
             </div>
         </div>
@@ -79,20 +79,20 @@
 
     <ul>
         <li>
-            Plaats een afbeelding tussen de <code style="background-color:black;">&lt;a&gt;&lt;/a&gt;</code> tags in plaats van de woorden <code style="background-color:black;">Klik hier</code>, zoals hieronder:
+            Probeer in plaats van de woorden <code style="background-color:black;">Klik hier</code> een afbeelding te plaatsen tussen de <code style="background-color:black;">&lt;a&gt; &lt;/a&gt;</code> tags, zoals hieronder:
         </li>
     </ul>
     <div class="codeblock">
         <code style="background-color:black;">
 &lt;<span class="pink">a href</span>="<span class="green">https://nl.wikipedia.org/wiki/Leiden</span>"><br />
   <span style="padding-left:24px;">&lt;<span class="pink">img src</span>="<span class="green">tito.png"</span> alt="<span class="green">Tito de hond</span>" width="<span class="green">100px</span>" /&gt;</span><br />
- &lt;<span class="pink">/a</span>&gt;
+ &lt;/<span class="pink">a</span>&gt;
 </code>
     </div>
 
     <ul>
         <li>
-            Klik op je foto. Zie je dat het een link is geworden?
+            Klik op de afbeelding. Zie je dat het een link is geworden?
         </li>
     </ul>
     <p>
@@ -103,14 +103,14 @@
         <code style="background-color:black;">
           &lt;<span class="pink">p</span>&gt;<br />
           <span style="padding-left:24px;">
-    &lt;<span class="pink">a href</span>="<span class="green">https://nl.wikipedia.org/wiki/Leiden</span>">Klik hier&lt;<span class="pink">/a</span>&gt; om de Wikipedia pagina te lezen!
+    &lt;<span class="pink">a href</span>="<span class="green">https://nl.wikipedia.org/wiki/Leiden</span>">Klik hier&lt;/<span class="pink">a</span>&gt; om de Wikipedia pagina te lezen!
     </span>
     <br />
-     &lt;<span class="pink">/p</span>&gt;
+     &lt;/<span class="pink">p</span>&gt;
     </code>
     </div>
 
-    <h3>Uitdaging: plaats een link in een lijst</h3>
+    <h3>Uitdaging: zet een link in een lijst</h3>
     <ul>
         <li>
             Kijk of je een lijst kunt maken met een link in een van de lijst-items.
